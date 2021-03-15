@@ -60,7 +60,7 @@ class AioHttp:
  #For private messages        
  #Ignore commands
  #No bots also allowed
-@Jebot.on_message(filters.private & ~filters.bot & ~filters.command("help") & ~filters.command("start") & ~filters.command("s"))  
+@Jebot.on_message(filters.regex("http(?:s?):\/\/(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)?‌​[\w\?‌​=]*)?") &filters.private & ~filters.bot & ~filters.command("help") & ~filters.command("start") & ~filters.command("s"))  
 #Lets Keep this Simple
 async def song(client, message):
   # Hope this will fix the args issue
