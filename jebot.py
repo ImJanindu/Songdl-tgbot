@@ -171,7 +171,7 @@ async def start(client, message):
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm a Song Downloader Bot
 
-Made by @ImJanindu 🇱🇰
+Made by @MrC_VENOM 
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -179,7 +179,7 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/Infinity_BOTs")
+                                            "Group", url="https://t.me/TV_SERIES_ON_Chat")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -210,7 +210,7 @@ async def help(client, message):
                chat_id=message.chat.id,
                text="""<b>Send a song name to download song
 
-~ @Infinity_BOTs</b>""",
+~ @TV_SERIES_ON_Chat</b>""",
             reply_to_message_id=message.message_id
         )
     else:
@@ -232,7 +232,7 @@ print(
     """
 Bot Started!
 
-Join @Infinity_BOTs
+Join @TV_SERIES_ON_Chat
 """
 )
 
